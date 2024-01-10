@@ -1,4 +1,4 @@
-package models;
+package com.flamehorizon.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -68,7 +68,7 @@ public class Info{
     @JsonProperty("participants") 
     public ArrayList<Participant> getParticipants() {
 		 return this.participants; } 
-    public void setParticipants(ArrayList<Participant> participants) { 
+    public void setParticipants(ArrayList<Participant> participants) {
 		 this.participants = participants; } 
     ArrayList<Participant> participants;
     @JsonProperty("platformId") 
@@ -84,9 +84,9 @@ public class Info{
 		 this.queueId = queueId; } 
     int queueId;
     @JsonProperty("teams") 
-    public ArrayList<Team> getTeams() { 
+    public ArrayList<Team> getTeams() {
 		 return this.teams; } 
-    public void setTeams(ArrayList<Team> teams) { 
+    public void setTeams(ArrayList<Team> teams) {
 		 this.teams = teams; } 
     ArrayList<Team> teams;
     @JsonProperty("tournamentCode") 

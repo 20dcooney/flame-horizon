@@ -1,8 +1,9 @@
-package controllers;
+package com.flamehorizon.demo.controllers;
 
-import models.MatchRoot;
+import com.flamehorizon.demo.models.Root;
+import com.flamehorizon.demo.services.MatchService;
 import org.springframework.web.bind.annotation.*;
-import services.MatchService;
+
 
 @CrossOrigin
 @RestController
@@ -16,9 +17,19 @@ public class MatchController {
     }
 
     @RequestMapping(path = "/{matchId}", method = RequestMethod.GET)
-    public MatchRoot getMatchById(@PathVariable String matchId) {
+    public Root getMatchById(@PathVariable String matchId) {
+
         return matchService.getMatchByMatchId(matchId);
     }
+
+    @RequestMapping(path ="/test", method = RequestMethod.GET)
+    public Root testing() {
+        return matchService.testingMatch();
+    }
+
+
+
+
 
 
 

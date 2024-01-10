@@ -1,4 +1,4 @@
-package models;
+package com.flamehorizon.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -46,9 +46,9 @@ public class Participant{
 		 this.bountyLevel = bountyLevel; } 
     int bountyLevel;
     @JsonProperty("challenges") 
-    public Challenges getChallenges() { 
+    public Challenges getChallenges() {
 		 return this.challenges; } 
-    public void setChallenges(Challenges challenges) { 
+    public void setChallenges(Challenges challenges) {
 		 this.challenges = challenges; } 
     Challenges challenges;
     @JsonProperty("champExperience") 
@@ -358,9 +358,9 @@ public class Participant{
 		 this.magicDamageTaken = magicDamageTaken; } 
     int magicDamageTaken;
     @JsonProperty("missions") 
-    public Missions getMissions() { 
+    public Missions getMissions() {
 		 return this.missions; } 
-    public void setMissions(Missions missions) { 
+    public void setMissions(Missions missions) {
 		 this.missions = missions; } 
     Missions missions;
     @JsonProperty("needVisionPings") 
@@ -424,9 +424,9 @@ public class Participant{
 		 this.pentaKills = pentaKills; } 
     int pentaKills;
     @JsonProperty("perks") 
-    public Perks getPerks() { 
+    public Perks getPerks() {
 		 return this.perks; } 
-    public void setPerks(Perks perks) { 
+    public void setPerks(Perks perks) {
 		 this.perks = perks; } 
     Perks perks;
     @JsonProperty("physicalDamageDealt") 

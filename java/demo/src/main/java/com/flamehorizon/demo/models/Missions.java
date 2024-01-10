@@ -1,4 +1,4 @@
-package models;
+package com.flamehorizon.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

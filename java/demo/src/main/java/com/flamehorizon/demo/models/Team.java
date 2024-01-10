@@ -1,4 +1,4 @@
-package models;
+package com.flamehorizon.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -12,9 +12,9 @@ public class Team{
 		 this.bans = bans; } 
     ArrayList<Object> bans;
     @JsonProperty("objectives") 
-    public Objectives getObjectives() { 
+    public Objectives getObjectives() {
 		 return this.objectives; } 
-    public void setObjectives(Objectives objectives) { 
+    public void setObjectives(Objectives objectives) {
 		 this.objectives = objectives; } 
     Objectives objectives;
     @JsonProperty("teamId") 

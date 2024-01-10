@@ -1,8 +1,8 @@
-package models;
+package com.flamehorizon.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Champion{
+public class Horde{
     @JsonProperty("first")
     public boolean getFirst() { 
 		 return this.first; } 
