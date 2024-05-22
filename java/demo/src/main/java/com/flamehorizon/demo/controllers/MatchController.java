@@ -1,8 +1,12 @@
 package com.flamehorizon.demo.controllers;
 
+import com.flamehorizon.demo.match_model.MatchRoot;
 import com.flamehorizon.demo.models.Root;
 import com.flamehorizon.demo.services.MatchService;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 @CrossOrigin
@@ -22,10 +26,12 @@ public class MatchController {
         return matchService.getMatchByMatchId(matchId);
     }
 
-    @RequestMapping(path ="/test", method = RequestMethod.GET)
-    public Root testing() {
-        return matchService.testingMatch();
+    @RequestMapping(path="/user/{puuid}", method = RequestMethod.GET)
+    public MatchRoot getMatchesByPuuid(@PathVariable String puuid) {
+
+        return matchService.getMatchesByPuuid(puuid);
     }
+
 
 
 
