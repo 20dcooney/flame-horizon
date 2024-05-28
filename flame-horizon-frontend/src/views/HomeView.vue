@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import PlayerSearch from '../components/PlayerSearch.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <player-search />
   </main>
 </template>
